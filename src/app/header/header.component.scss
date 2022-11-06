@@ -1,0 +1,26 @@
+header {
+    background-color:violet;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    button {
+        width: 6rem;
+        height: 2rem;
+        background-color: mediumorchid;
+        box-shadow: 3px 3px 10px 0px black;
+        a {
+            font-size: 1rem;
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+        }
+        a.router-link-active {
+            font-weight: 600;
+        }
+    }
+    button:hover {
+        background-color: rgb(186, 85, 211, 0.7);
+    }
+}

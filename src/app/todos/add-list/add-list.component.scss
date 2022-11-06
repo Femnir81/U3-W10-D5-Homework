@@ -1,0 +1,33 @@
+div {
+    margin:0 auto;
+    margin-bottom: 5rem;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    input {
+        font-size: 14px;
+        font-weight: 600;
+        width: 500px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid mediumorchid;
+        box-shadow: 3px 3px 10px 1px black;
+        margin-right: 2px;
+    }
+    input:focus-visible {
+        outline: 0px;
+    }
+    button {
+        width: 30px;
+        height: 30px;
+        background-color: mediumorchid;
+        border-radius: 5px;
+        font-weight:600;
+        font-size: 15px;
+        box-shadow: 3px 3px 10px 1px black;
+    }
+    button:hover {
+        background-color: rgb(186, 85, 211, 0.7);
+        cursor: pointer;
+    }
+}

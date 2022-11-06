@@ -1,0 +1,22 @@
+.container {
+        width: 800px;
+        background-color: violet;
+        margin: 0rem auto;
+        padding: 5rem;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px 5px black;
+    
+    h1 {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    p {
+        font-size: 20px;
+        font-weight: 600;
+        span {
+            color: limegreen;
+            margin-right: 2px;
+            background-color: transparent;
+        }
+    }
+}

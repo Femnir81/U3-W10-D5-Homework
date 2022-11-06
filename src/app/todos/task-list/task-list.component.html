@@ -1,0 +1,18 @@
+<h1 *ngIf="showTask === false">Recupero Task...</h1>
+
+<div *ngIf="showTask === true">
+  <div *ngIf="taskArr.length === 0"><h1>Oops, non ci sono Task</h1></div>
+  <div *ngIf="taskArr.length >= 1">
+    <h1 *ngIf="taskArr.length >= 1 && taskArr.length <= 5">
+      Task da completare
+    </h1>
+    <h1 *ngIf="taskArr.length >= 6">Troppa carne al fuoco... 🔥</h1>
+    <p *ngFor="let task of taskArr; let i = index">
+      <span> <span>👉</span> {{ task.title }} </span>
+      <span>
+        <button type="button" (click)="onChecked(task)">✔</button
+        ><button type="button" (click)="onRemove(task)">❌</button>
+      </span>
+    </p>
+  </div>
+</div>

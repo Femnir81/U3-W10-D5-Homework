@@ -1,0 +1,9 @@
+<div class="container">
+  <h1 *ngIf="showTask === false">Recupero Task...</h1>
+  <div *ngIf="showTask === true">
+    <h1>Task Completate</h1>
+    <p *ngFor="let task of taskArrDone, let i = index">
+      <span>✔</span> {{ task.title }}
+    </p>
+  </div>
+</div>
